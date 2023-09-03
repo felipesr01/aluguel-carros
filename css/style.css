@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
+}
+header > h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+div.banner {
+    background-image: url(../imgs/capa.jpg);
+    background-size: cover;
+    height: 300px;
+}
+div.nome {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(47, 79, 79, 0.507);
+    padding: 30px;
+}
+div.nome > h2 {
+    color: white;
+    margin: 0;
+}
+
+section {
+    margin: auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.imgs {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    border-left: 1px solid darkslategray;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.bannerContato {
+    display: flex;
+    align-items: center;
+    background-color: #D92121;
+    height: 100px;
+}
+.faixaContato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6C0000;
+    padding: 5px;
+    height: 50%;
+    width: 100%;
+}
+.faixaContato > h4 {
+    color: white;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    gap: 10px;
+}
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #D92121;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: #ad1a1a;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px){
+    header {
+        padding-left: 10%;
+    }
+    div.nome > h2 {
+        padding-right: 10%;
+    }
+}
